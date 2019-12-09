@@ -1,0 +1,8 @@
+*.zip
+pjproject-*
+android-ndk-*
+openssl-*
+*.tar.gz
+jniLibs
+output
+local-*
