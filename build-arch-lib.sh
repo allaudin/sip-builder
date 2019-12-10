@@ -4,8 +4,6 @@
 # Description	: Generates .so libs for given architecture
 # Date			: 06-Dec-2019
 
-# args: sip-root-dir, arch, arch-prefix, output-dir, ndk-root
-
 SIP_ROOT=$1
 ARCH=$2
 ARCH_PREFIX=$3
@@ -23,8 +21,7 @@ cd $SWIG_PATH && make
 
 if [ ! -d ${OUPUT_DIR} ]; then mkdir -p ${OUPUT_DIR}; fi
 
-rsync -r $TARGET_PATH ${OUPUT_DIR} &&\
- echo "!!! *** --- **** generated lib for $2 in $3/$2 *** --- **** !!!"
+rsync -r $TARGET_PATH ${OUPUT_DIR} && echo "!!! generated lib for ${ARCH} in ${OUPUT_DIR}/${ARCH} !!!"
 
 
 STRIP_TOOL=${NDK_ROOT}/toolchains/${ARCH_PREFIX}-4.9/prebuilt/linux-x86_64/bin/${STRIP_FILE}

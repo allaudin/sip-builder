@@ -4,9 +4,6 @@
 # Description	: Generates openssl for sip
 # Date			: 06-Dec-2019
 
-# args: ndk-home cpu-arch ssl-root
-
-
 export ANDROID_NDK_HOME=$1
 ARCH=$2
 ARCH_PREFIX=$3
@@ -14,8 +11,6 @@ SSL_ROOT=$4
 
 API_LEVEL=21
 ARCH_NAME=""
-
-# todo: move to parent make
 
 case "${ARCH}" in
     "x86")
