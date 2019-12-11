@@ -4,7 +4,6 @@
 # Description	: Build pjsip
 # Date			: 06-Dec-2019
 
-# args: arch, ndk-root-dir, sip-root-dir, sip-android-config-file, ssl-root-dir
 
 export TARGET_ABI=$1
 export ANDROID_NDK_ROOT=$2
