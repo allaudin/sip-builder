@@ -16,5 +16,5 @@ src:
 	tar -xvf ${KAMAILIO_TAR} -C ${KAMAILIO_ROOT_DIR}; fi
 	
 
-install: 
+install: deps src
 	./build.sh ${KAMAILIO_ROOT_DIR}
