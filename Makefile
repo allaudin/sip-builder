@@ -2,7 +2,7 @@
 # Description	: Generates sip binaries for android
 # Date			: 05-Dec-2019 (Munich, Germany)
 # Version		: 1.0.0   
-# Usage		 	: make build
+# Usage		 	: make {arch}
 # Bash Version	: 4.4.20(1)-release (x86_64-pc-linux-gnu)
 # Dependencies	: build-openssl.sh build-sip.sh 
 #				  build-arch-lib.sh
@@ -81,8 +81,6 @@ fixAndroidConfig:
 	chmod +x ${SIP_ROOT}/${SIP_ANDROID_CONFIG} ${SIP_ROOT}/configure ${SIP_ROOT}/aconfigure
 	@if [ -z `which dos2unix`  ]; then sudo apt-get install dos2unix; fi
 	dos2unix ${SIP_ROOT}/${SIP_ANDROID_CONFIG}
-
-prepareContext: syncOpenssl configSip
 
 $(X86):
 	$(call generate_lib,$(X86))
