@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SERVER_ADDRESS=192.168.179.27
+SERVER_ADDRESS=`cat local-ip`
 PORT=9000
 SCHEME=sip
 WAV_FILE=`pwd`/output.wav
@@ -13,7 +13,7 @@ pjsua \
 --password=${PASSWORD} \
 --registrar=${SCHEME}:${SERVER_ADDRESS} \
 --realm=* \
---id=${SCHEME}:allaudin1@${SERVER_ADDRESS} \
+--id=${SCHEME}:${USERNAME}@${SERVER_ADDRESS} \
 --local-port=${PORT} \
 --play-file=${WAV_FILE} \
 --auto-play
