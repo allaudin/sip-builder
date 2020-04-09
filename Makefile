@@ -1,6 +1,6 @@
 # Author		: M. Allaudin (mallaudinqazi@gmail.com)
 # Description	: Generates sip binaries for android
-# Date			: 05-Dec-2019 (Munich, Germany)
+# Date			: 05-Dec-2019
 # Version		: 1.0.0   
 # Usage		 	: make {arch}
 # Bash Version	: 4.4.20(1)-release (x86_64-pc-linux-gnu)
@@ -16,11 +16,12 @@ SIP_ROOT=${WORKING_DIR}/pjproject-${SIP_VERSION}
 SIP_ARCHIVE=pjproject-${SIP_VERSION}.zip
 SIP_DOWNLOAD_LINK=https://www.pjsip.org/release/${SIP_VERSION}/${SIP_ARCHIVE}
 
-
-SSL_VERSION=1.1.1c
+SSL_VERSION_NUMBER=1.1.1
+SSL_VERSION=${SSL_VERSION_NUMBER}c
 SSL_ROOT=${WORKING_DIR}/openssl-${SSL_VERSION}
 SSL_ARCHIVE=openssl-${SSL_VERSION}.tar.gz
-SSL_DOWNLOAD_LINK=https://www.openssl.org/source/${SSL_ARCHIVE}
+SSL_DOWNLOAD_LINK=https://www.openssl.org/source/old/${SSL_VERSION_NUMBER}/${SSL_ARCHIVE}
+
 
 NDK_VERSION=r16b
 NDK_ROOT=${WORKING_DIR}/android-ndk-${NDK_VERSION}
