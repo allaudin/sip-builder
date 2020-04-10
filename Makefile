@@ -112,9 +112,6 @@ collectSources:
 archiveOutput: collectSources
 	tar -czvf ${OUTPUT_TAR} -C ${LIBS_DIR} . 
 
-push:
-	@git add . && git commit -m "auto update" && git push || true
-
 versions:
 	@echo "ndk: ${NDK_VERSION}\npjsip: ${SIP_VERSION}\nopenssl: ${SSL_VERSION}"
 
