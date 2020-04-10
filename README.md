@@ -15,9 +15,9 @@ Bash scripts for generating pjsip binaries for android.
 
 ### Versions
 
-ndk: r16b
-pjsip: 2.9
-openssl: 1.1.1c
+- ndk: r16b
+- pjsip: 2.9
+- openssl: 1.1.1c
 
 ### ToDo
 
