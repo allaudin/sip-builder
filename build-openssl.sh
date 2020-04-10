@@ -2,7 +2,7 @@
 
 # Author		: M. Allaudin (mallaudinqazi@gmail.com)
 # Description	: Generates openssl for sip
-# Date			: 06-Dec-2019
+# Date			: 01-June-2019
 
 export ANDROID_NDK_HOME=$1
 ARCH=$2

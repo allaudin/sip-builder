@@ -2,7 +2,7 @@
 
 # Author		: M. Allaudin (mallaudinqazi@gmail.com)
 # Description	: Generates .so libs for given architecture
-# Date			: 06-Dec-2019
+# Date			: 01-June-2019
 
 SIP_ROOT=$1
 ARCH=$2

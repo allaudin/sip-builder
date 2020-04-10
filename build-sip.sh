@@ -2,7 +2,7 @@
 
 # Author		: M. Allaudin (mallaudinqazi@gmail.com)
 # Description	: Build pjsip
-# Date			: 06-Dec-2019
+# Date			: 01-June-2019
 
 
 export TARGET_ABI=$1

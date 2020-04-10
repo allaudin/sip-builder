@@ -1,7 +1,7 @@
 # Author		: M. Allaudin (mallaudinqazi@gmail.com)
 # Description	: Generates sip binaries for android
-# Date			: 05-Dec-2019
 # Version		: 1.0.0   
+# Date			: 01-June-2019
 # Usage		 	: make {arch}
 # Bash Version	: 4.4.20(1)-release (x86_64-pc-linux-gnu)
 # Dependencies	: build-openssl.sh build-sip.sh 
