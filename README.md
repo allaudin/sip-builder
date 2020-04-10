@@ -13,6 +13,16 @@ Bash scripts for generating pjsip binaries for android.
 
 `./copy.sh path-to-android-project-root-dir`
 
+### Versions
+
+ndk: r16b
+pjsip: 2.9
+openssl: 1.1.1c
+
+### ToDo
+
+Compile with video module
+
 Made with :heart: by Allaudin
 
 
