@@ -13,8 +13,9 @@ WORKING_DIR=$(shell pwd)
 
 SIP_VERSION=2.9
 SIP_ROOT=${WORKING_DIR}/pjproject-${SIP_VERSION}
-SIP_ARCHIVE=pjproject-${SIP_VERSION}.zip
-SIP_DOWNLOAD_LINK=https://www.pjsip.org/release/${SIP_VERSION}/${SIP_ARCHIVE}
+SIP_ARCHIVE=${SIP_VERSION}.zip
+
+SIP_DOWNLOAD_LINK=https://github.com/pjsip/pjproject/archive/${SIP_ARCHIVE}
 
 SSL_VERSION_NUMBER=1.1.1
 SSL_VERSION=${SSL_VERSION_NUMBER}c
